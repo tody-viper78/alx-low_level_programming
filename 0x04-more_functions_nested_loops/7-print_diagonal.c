@@ -2,7 +2,7 @@
 
 /**
   * print_diagonal - func draws a diagonal line on the terminal
-  * @n: num of times the character \ to be printed
+  * @n: num of times the character \ should be printed
   */
 void print_diagonal(int n)
 {
@@ -18,10 +18,11 @@ void print_diagonal(int n)
 			for (j = 0; j < n; j++)
 			{
 				if (j == i)
-					_putchar('\\');
+				_putchar('\\');
 				else if (j < i)
-				_putchar('\n');
+				_putchar(' ');
 			}
+			_putchar('\n');
 		}
 	}
 }
